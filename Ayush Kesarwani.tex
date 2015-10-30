@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}
+\usepackage[bottom,norule]{footmisc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+
+% adjust the page margins
+\usepackage[left = 1.2cm, right = 1.2cm, top = 1.5cm, bottom = 1.5cm]{geometry}
+\setlength{\hintscolumnwidth}{0.15\textwidth}   %added after searching net to incerease timeline width
+\name{Ayush}{Kesarwani}
+\title{Data Science Enthusiast}                                % optional, remove / comment the line if not wanted
+\address{Bangalore, India}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~9742109164}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{ayush.kesarwani@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{ayushkesar}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{ayushkesar}                             % optional, remove / comment the line if not wanted
+\social[github]{ayushkear}                              % optional, remove / comment the line if not wanted
+\newcommand{\comment}[1]{}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.7}
+\definecolor{darkred}{rgb}{0.7,0.0,0.0}
+\definecolor{darkred2}{rgb}{0.85,0.0,0.0}
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}
+%example: \MYhref[darkred]{http://www.uni-oldenburg.de/}{Oldenburg University}
+\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
+\newcommand{\myhy}[2]{\href[#1]{\color{green}\setulcolor{red}\ul{#2}}} 
+
+\newcommand{\superscript}[2][darkred2]{{\color{#1}$^{#2}$}}
+\newcommand{\urlfootnote}[2]{\footnotetext[#1]{\href{#2}{#2}}}
+%\urlfootnote{1}{http://www.shazam.com}
+\newcommand{\myurlfootnote}[4][blue]{\footnotetext[#2]{\MYhref[#1]{#3}{#4}}}
+% equals to bellow:
+%\newcommand{\myurlfootnote}[4][blue]{\footnotetext[#2]{\href{#3}{\color{#1}{#4}}}}
+%example: \myurlfootnote[darkred]{1}{http://www.uni-oldenburg.de/}{Oldenburg University}
+
+%\renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
+%\renewcommand{\footrulewidth}{0.4pt}% Default \footrulewidth is 0pt
+%\def\mydoublerule#1#2#3{%%
+%  \hrule width#1 height#2 \vskip#2
+%  \hrule width#1 height#3 
+%}
+
+\begin{document}
+%\hypersetup{ colorlinks = true, %Colours links instead of ugly boxes 
+%urlcolor = blue, %Colour for external hyperlinks 
+%linkcolor = blue, %Colour of internal links 
+%citecolor = red %Colour of citations 
+%}
+%\hypersetup{ colorlinks, linkcolor={rad}, citecolor={blue}, urlcolor={blue} }
+
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace*{-1.2cm} %reduce that giant whitespace
+
+
+\section{Summary}
+\cvitem{}{1+ Year of experience in Data Science and Business Intelligence.}
+\cvitem{}{Proficient in Data Science using Python.}
+
+\comment{
+%\section{Master thesis}
+\cvitem{title}{\emph{Title}}
+\cvitem{supervisors}{Supervisors}
+\cvitem{description}{Short thesis abstract}
+}
+
+\comment{
+\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Achievement 1;
+\item Achievement 2, with sub-achievements:
+  \begin{itemize}%
+  \item Sub-achievement (a);
+  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    \begin{itemize}
+    \item Sub-sub-achievement i;
+    \item Sub-sub-achievement ii;
+    \item Sub-sub-achievement iii;
+    \end{itemize}
+  \item Sub-achievement (c);
+  \end{itemize}
+\item Achievement 3.
+\end{itemize}}
+}
+
+%\vspace{1ex}
+%\mydoublerule{\linewidth}{1pt}{3pt}
+%\vspace{1ex}
+
+%\vspace{2ex} %for paraspace
+%\hrule %Horizontal line
+
+
+
+
+\section{Experience}
+%\subsection{Physics related}
+
+\cventry{September, 2014 -- Present}{Trainee Developer}{Smart ERP Solutions Pvt. Ltd}{Bangalore}{India}{Fields of research:
+\begin{itemize}
+\item line 1.
+\item line 2.
+\end{itemize}
+}
+
+%\subsection{Computer related}
+\cventry{June, 2013 -- July, 2013}{Research Intern}{DA-IICT}{Gujrat}{India}{
+\begin{itemize}
+\item line 1.
+\item line 2.
+\end{itemize}
+}
+
+\section{Programming and Development Skills}
+\cvitem{Languages}{Python, SQL, C, C++, \LaTeX. Familiar with: R, Java, MATLAB.}
+\cvitem{Database}{Oracle, MSSQL, MongoDB, MYSQL, SQLite.}
+\cvitem{Python Tools}{Pandas, Matlibplot, NumPy, SciPy, SymPy, Scikit-Learn, Apache Spark, Django.}
+\cvitem{BI \& ETL Tools}{Intellicus, QlikView, SAPBO, PowerBI, Informatica.}
+\cvitem{IDE \& Editor}{IPython, PyCharm, Sublime Text, Git, Netbeans.}
+
+\section{Side Projects and Coursework}
+\cvitem{October 2015} {What's Cooking, Kaggle: Categorize and Predict cuisine using recipe ingredients.}
+\cvitem{September 2015}{Bag of words meets bags of popcorn, Kaggle: Predict sentiment for each movie review.}
+\cvitem{July 2015}{Scalable Machine Learning, edX: Classification and Regression based predictive analysis.}
+\cvitem{June 2015}{Introduction to Big Data with Apache Spark, edX: Analyzing log files and word count.}
+\cvitem{May 2015}{Interactive Programming in Python, Coursera: Building event based games in Python.}
+
+\section{Publication}
+\cventry{}{\textnormal{Ayush Kesarwani, Milind Mathur, }"Comparison Between DES, 3DES, RC2, RC6, Blowfish and AES"}{accepted for 20-minute presentation at \textbf{NCNHIT-13 (Conference On Computer Science Systems)}}{October 18 , 2013 at MET, Mumbai, India}{}{}
+
+\section{Education}
+\cventry{2010 -- 2014}{Bachelor of Technology, E{\&}C}{Shri Mata Vaishno Devi University}{Katra, J{\&}K}{}{{} CGPA: \textit{7.73/10}}{}
+\cventry{2009}{Senior Secondary}{CBSE}{Allahabad Public School \& College}{Allahabad, U.P}{ Percentage: \textit{69\%}}{}
+\cventry{2007}{High School}{CBSE}{Allahabad Public School \& College}{Allahabad, U.P}{ Percentage: \textit{71.8\%}}{}
+
+\clearpage
+\end{document}
